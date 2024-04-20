@@ -1,0 +1,16 @@
+---
+const { items } = Astro.props
+---
+
+<div class="w-10/12 md:w-full bg-[#FFF7FB] p-6 rounded-xl">
+  <h2 class="font-semibold text-2xl text-[#7A284E]">Preparation Time</h2>
+  <ul class="list-disc ml-7 marker:text-[#7A284E]">
+    {
+      items.map((item) => (
+        <li class="text-[#5F564D]">
+          <span class="font-bold">{item.title}</span>: {item.desc}
+        </li>
+      ))
+    }
+  </ul>
+</div>

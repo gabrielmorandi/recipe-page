@@ -1,0 +1,18 @@
+---
+const { items } = Astro.props
+---
+
+<div class="w-10/12 md:w-full flex flex-col gap-6">
+  <h2 class="text-[#854632] font-serif text-2xl">Instrutions</h2>
+  <ul
+    class="list-decimal px-6 marker:text-[#854632] flex flex-col gap-2 pb-8 border-b border-[#E3DDD7]"
+  >
+    {
+      items.map((item) => (
+        <li class="text-[#5F564D] pl-1">
+          <span class="font-bold">{item.title}</span>: {item.desc}
+        </li>
+      ))
+    }
+  </ul>
+</div>
