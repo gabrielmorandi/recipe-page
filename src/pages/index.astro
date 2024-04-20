@@ -3,6 +3,7 @@ import "@fontsource-variable/outfit"
 import "@fontsource/young-serif"
 
 import { Image } from "astro:assets"
+import OmelleteImage from "../../public/image-omelette.jpeg"
 
 import Preparation from "../components/Preparation.astro"
 import Ingredients from "../components/Ingredients.astro"
@@ -24,7 +25,7 @@ import Nutrition from "../components/Nutrition.astro"
         class="w-full flex flex-col items-center gap-10 md:max-w-[736px] bg-white md:mt-32 md:px-10 md:pt-10 rounded-t-3xl"
       >
         <Image
-          src="/public/image-omelette.jpeg"
+          src={OmelleteImage}
           width={375}
           height={171}
           loading="eager"
